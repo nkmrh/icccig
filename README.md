@@ -1,6 +1,8 @@
 [![MIT License](https://img.shields.io/npm/l/baguettebox.js.svg)](http://opensource.org/licenses/MIT)
 [![](https://img.shields.io/badge/dependencies-imagemagick-brightgreen.svg)](https://www.imagemagick.org/script/index.php)
 
+![](./sample.jpg)
+
 # Info
 
 This script generate images of itunes card content code. (for readable OCR)
