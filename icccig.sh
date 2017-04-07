@@ -49,6 +49,10 @@ if [ -p /dev/stdin ] && [ $# -eq 0 ]; then
     write_image_from_code $code
   done
 elif [ $# -eq 1 ]; then
+  if [ $1 = "-h" ] || [ $1 = "--help" ] || [ $1 = "help" ]; then
+    usage
+    exit 0
+  fi
   mkdir -p $EXPORT_DIR
   while read -r code; do
     write_image_from_code $code
