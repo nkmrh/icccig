@@ -12,4 +12,4 @@ This script generate images of itunes card content code. (for readable OCR)
 **Important**: 
 In order for this script to work you need to have [Imagemagick](https://www.imagemagick.org/script/index.php) installed.
 
-Download promocodes.txt from itunes connect and move icccig directory then run `icccig.sh`. It will generate code images to images directory.
+Download promocodes.txt or copy the promocodes to clipboard from iTunesConnect and run `./icccig.sh promotions.txt` or `pbpaste | ./icccig.sh`. It will generate code images to `promocodes` directory.
