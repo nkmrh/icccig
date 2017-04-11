@@ -8,7 +8,7 @@ TEMP="tmp-$(date | md5).jpg"
 usage() {
   echo "usage: $CMD [filename]"
   echo
-  echo "filename: e.g. \"promotiondes.txt\" downloaded from iTunesConnect."
+  echo "filename: e.g. \"promocodes.txt\" downloaded from iTunesConnect."
   echo "          Read from standard input if no file is specified."
 }
 
