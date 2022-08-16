@@ -45,9 +45,9 @@ write_image_from_code() {
 check_command_exists convert
 if [ -p /dev/stdin ] && [ $# -eq 0 ]; then
   mkdir -p $EXPORT_DIR
-  while read -r code; do
-    write_image_from_code $code
-  done
+  { read code; }
+  write_image_from_code $code
+  echo "${EXPORT_DIR}/${code}.jpg"
 elif [ $# -eq 1 ]; then
   if [ $1 = "-h" ] || [ $1 = "--help" ] || [ $1 = "help" ]; then
     usage
